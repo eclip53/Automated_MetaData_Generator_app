@@ -108,6 +108,5 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 - metadata_gen_app.py - The main App file(.py).
 - fp_dc_setup_guide.pdf - It is the pdf document on which the app is tested.
 - script.ipynb - Jupyter Notebook to Run the App file on Google Colab.
-- Readme.md - Readme file which tells about overview of the project
 - Screencast From 2025-06-25 16-46-11.webm - Video demonstration of the project
  
