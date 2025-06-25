@@ -101,5 +101,7 @@ NOTE: Before running the app , install the required dependencies using:
 - View results in the browser.
 - Download the JSON metadata.
 
-    
+### Info about the pdf document present in the repository
+
+- It is the pdf document on which the app is tested.
  
