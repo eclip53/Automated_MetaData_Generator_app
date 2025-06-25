@@ -6,7 +6,7 @@
 !apt-get install -y poppler-utils  # for pdf2image
 !python -m spacy download en_core_web_sm"""
 
-# Importing essential modeules/libraries and packages
+# Importing essential modules/libraries and packages
 
 import os
 import io
@@ -187,18 +187,18 @@ def generate_metadata(text, filename="unknown.txt"):
 
 # Streamlit UI
 st.set_page_config(page_title="Automated Meta Data Generator", layout="wide")
-st.title("Automated Metadata Generator (Vision OCR + YAKE + spaCy)")
+st.title("📄 Automated Metadata Generator (Vision OCR + YAKE + spaCy)")
 
 uploaded_file = st.file_uploader("Upload a PDF, DOCX, or Image", type=["pdf", "docx", "png", "jpg", "jpeg"])
 
 if uploaded_file:
-    with st.spinner("Extracting content..."):
+    with st.spinner("🧠 Extracting content..."):
         try:
             raw_text = extract_text(uploaded_file)
             cleaned_text = clean_ocr_text(raw_text)
             metadata = generate_metadata(cleaned_text, filename=uploaded_file.name)
 
-            tab1, tab2 = st.tabs(["Extracted Text", "Metadata"])
+            tab1, tab2 = st.tabs(["📃 Extracted Text", "💾 Metadata"])
             with tab1:
                 st.text_area("Full Text", cleaned_text, height=300)
             with tab2:
