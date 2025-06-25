@@ -55,6 +55,8 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 ## Limitations:
 
 - Relies on Google Cloud Vision API (credentials must be available).
+
+- Due to limitations of Spacy Module - It can only process small sized documents with less than 1 million characters.
   
 - Summarization depends on the quality of extracted OCR/text.
 
