@@ -75,11 +75,9 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 NOTE: Before running the app , Install the required dependencies using:
 
-!pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
-
-!apt-get install -y poppler-utils
-
-!python -m spacy download en_core_web_sm
+- pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
+- apt-get install -y poppler-utils
+- python -m spacy download en_core_web_sm
 
 - Then Run the app using :
 
