@@ -90,7 +90,14 @@ NOTE: Before running the app , install the required dependencies using:
   then on runnning the next cell , it will prompt a public_url (eg.- "https://b961-35-247-107-213.ngrok-free.app") , just tap on the url and user will be redirected to the Web App
 
 
+After Reaching to Web App:
 
+- Upload a .pdf, .docx, .txt, or image file.
+- The app will:
+- Extract content
+- Generate summary, keywords, etc.
+- View results in the browser.
+- Download the JSON metadata.
 
     
  
