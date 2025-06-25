@@ -5,29 +5,28 @@ Objective : The project aims to automatically extract structured metadata (such 
 
 Feature	Description :
 
-Multi-format Input	: Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
-OCR Integration     : Uses Google Cloud Vision API to extract text from images or scanned PDFs
-Keyword Extraction	: Uses YAKE to extract top keywords and keyphrases
-Metadata Generation : Extracts title, summary, keywords, language, word count, and timestamp
-Language Detection	: Identifies the document's language using langdetect
-Summary Extraction	: Uses spaCy's TextRank to produce concise summaries
-Title Detection     : Combines heuristics and NLP (noun/proper noun-rich short lines) to extract meaningful titles
-Streamlit UI	      : Provides a clean web interface to upload files, view full text, and download metadata
-Download Metadata   : Gives option to user to download the metadata in "json" format
+Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
+OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
+Keyword Extraction - Uses YAKE to extract top keywords and keyphrases
+Metadata Generation - Extracts title, summary, keywords, language, word count, and timestamp
+Language Detection - Identifies the document's language using langdetect
+Summary Extraction - Uses spaCy's TextRank to produce concise summaries
+Title Detection - Combines heuristics and NLP (noun/proper noun-rich short lines) to extract meaningful titles
+Streamlit UI - Provides a clean web interface to upload files, view full text, and download metadata
+Download Metadata - Gives option to user to download the metadata in "json" format
 
 
 Tools & Technologies Used :
 
-Technology	              Purpose
 
-Streamlit	              Web interface for the app
-Google Cloud Vision	      OCR to extract text from images and scanned PDFs
-spaCy + pyTextRank	      NLP for sentence parsing, summarization, and title detection
-YAKE	                  Lightweight unsupervised keyword extractor
-langdetect	              Detects document language
-PyPDF2, python-docx	      Parsing PDF and DOCX files
-pdf2image + Pillow	      Converting PDF pages to images for OCR fallback
-wordninja	              Splits long concatenated words (e.g., metadataextractor)
+Streamlit - Web interface for the app
+Google Cloud Vision	- OCR to extract text from images and scanned PDFs
+(spaCy + pyTextRank) - NLP for sentence parsing, summarization, and title detection
+YAKE - Lightweight unsupervised keyword extractor
+langdetect - Detects document language
+PyPDF2, python-docx	- Parsing PDF and DOCX files
+pdf2image + Pillow - Converting PDF pages to images for OCR fallback
+wordninja - Splits long concatenated words (e.g., metadataextractor)
 
 
 Why This Design?
