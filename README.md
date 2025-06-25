@@ -20,14 +20,14 @@ Tools & Technologies Used :
 
 Technology	              Purpose
 
-Streamlit	                Web interface for the app
+Streamlit	              Web interface for the app
 Google Cloud Vision	      OCR to extract text from images and scanned PDFs
 spaCy + pyTextRank	      NLP for sentence parsing, summarization, and title detection
-YAKE	                    Lightweight unsupervised keyword extractor
+YAKE	                  Lightweight unsupervised keyword extractor
 langdetect	              Detects document language
 PyPDF2, python-docx	      Parsing PDF and DOCX files
 pdf2image + Pillow	      Converting PDF pages to images for OCR fallback
-wordninja	                Splits long concatenated words (e.g., metadataextractor)
+wordninja	              Splits long concatenated words (e.g., metadataextractor)
 
 
 Why This Design?
@@ -59,6 +59,8 @@ Limitations:
 *Not optimized for handwriting or multilingual documents.
 
 
+
+
 How to Run the APP :
 
 
@@ -70,8 +72,11 @@ streamlit run metadata_gen_app.py  # This will automatically run the web app on 
 NOTE: Before running the app , install the required dependencies using:
 
 !pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
+
 !apt-get install -y poppler-utils
+
 !python -m spacy download en_core_web_sm
+
 
 
 
