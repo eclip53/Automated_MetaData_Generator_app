@@ -1,9 +1,9 @@
-Project Overview: Automated Metadata Extraction App
+## Project Overview: Automated Metadata Extraction App
 
-Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
+## Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
 
 
-Feature	Description :
+## Feature	Description :
 
 - Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
 - OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
@@ -17,7 +17,7 @@ Feature	Description :
 
 
 
-Tools & Technologies Used :
+## Tools & Technologies Used :
 
 
 - Streamlit - Web interface for the app
@@ -32,7 +32,7 @@ Tools & Technologies Used :
 
 
 
-Why This Design?
+## Why This Design?
 
 - OCR Fallback Logic-
 Many PDFs have embedded images with no selectable text. We first try native PDF text extraction. If it fails, we convert pages to images and apply Vision OCR.
@@ -42,17 +42,19 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 
 
-Strategies which were changed during developement:
+## Strategies which were changed during developement:
 
 - Removed Hugging Face / OpenAI APIs
-These APIs required authentication, quota management, and billing, making them unsuitable for free/community deployment. Instead, we opted for fully open-source NLP (spaCy, YAKE) that works offline and integrates well with local and cloud setups.
+- These APIs required authentication, quota management, and billing, making them unsuitable for free/community deployment. Instead, we opted for fully open-source NLP (spaCy, YAKE) that works offline and integrates well with   local and cloud setups.
+
     
 - Dropped NLTK
-NLTK caused path-related errors and required downloading corpora, which were problematic in deployment (e.g., punkt_tab errors). Replaced by spaCy for better and faster NLP.
+- NLTK caused path-related errors and required downloading corpora, which were problematic in deployment (e.g., punkt_tab errors). Replaced by spaCy for better and faster NLP.
 
 
 
-Limitations:
+
+## Limitations:
 
 - Relies on Google Cloud Vision API (credentials must be available).
   
@@ -63,7 +65,7 @@ Limitations:
 
 
 
-How to Run the APP :
+## How to Run the APP :
 
 
 
@@ -90,7 +92,7 @@ NOTE: Before running the app , install the required dependencies using:
   then on runnning the next cell , it will prompt a public_url (eg.- "https://b961-35-247-107-213.ngrok-free.app") , just tap on the url and user will be redirected to the Web App
 
 
-After Reaching to Web App:
+### After Reaching to Web App:
 
 - Upload a .pdf, .docx, .txt, or image file.
 - The app will:
