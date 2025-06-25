@@ -5,8 +5,8 @@ Objective : The project aims to automatically extract structured metadata (such 
 
 Feature	Description :
 
-Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
-OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
+*Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
+*OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
 Keyword Extraction - Uses YAKE to extract top keywords and keyphrases
 Metadata Generation - Extracts title, summary, keywords, language, word count, and timestamp
 Language Detection - Identifies the document's language using langdetect
