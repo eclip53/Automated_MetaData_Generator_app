@@ -54,11 +54,11 @@ NLTK caused path-related errors and required downloading corpora, which were pro
 
 Limitations:
 
-*Relies on Google Cloud Vision API (credentials must be available).
+- Relies on Google Cloud Vision API (credentials must be available).
+  
+- Summarization depends on the quality of extracted OCR/text.
 
-*Summarization depends on the quality of extracted OCR/text.
-
-*Not optimized for handwriting or multilingual documents.
+- Not optimized for handwriting or multilingual documents.
 
 
 
@@ -67,7 +67,7 @@ How to Run the APP :
 
 
 
-To Run the app (metadata_gen_app.py) locally, use:
+- To Run the app (metadata_gen_app.py) locally, use:
 
 streamlit run metadata_gen_app.py  # This will automatically run the web app on browser
 
@@ -82,7 +82,7 @@ NOTE: Before running the app , install the required dependencies using:
 
 
 
-To Run the app (metadata_gen_app.py) on Google Colab :
+- To Run the app (metadata_gen_app.py) on Google Colab :
 
 - First download the app file metadata_gen_app.py in your system
   
