@@ -69,24 +69,24 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 
 
-- To Run the app (metadata_gen_app.py) locally :
+### To Run the app (metadata_gen_app.py) locally :
 
 - Clone the repository on the local system
 
-NOTE: Before running the app , Install the required dependencies using:
+- NOTE: Before running the app , Install the required dependencies using:
 
 - pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
 - apt-get install -y poppler-utils
 - python -m spacy download en_core_web_sm
 
-- Then Run the app using :
+#### Then Run the app using :
 
 - streamlit run metadata_gen_app.py  # This will automatically run the web app on browser
 
 
 
 
-- To Run the app (metadata_gen_app.py) on Google Colab :
+### To Run the app (metadata_gen_app.py) on Google Colab :
 
 - First download the app file metadata_gen_app.py in your system
   
