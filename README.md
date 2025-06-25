@@ -44,12 +44,10 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 ## Strategies which were changed during developement:
 
-- Removed Hugging Face / OpenAI APIs
-- These APIs required authentication, quota management, and billing, making them unsuitable for free/community deployment. Instead, we opted for fully open-source NLP (spaCy, YAKE) that works offline and integrates well with   local and cloud setups.
+- Removed Hugging Face / OpenAI APIs  -  These APIs required authentication, quota management, and billing, making them unsuitable for free/community deployment. Instead, we opted for fully open-source NLP (spaCy, YAKE) that works offline and integrates well with local and cloud setups.
 
     
-- Dropped NLTK
-- NLTK caused path-related errors and required downloading corpora, which were problematic in deployment (e.g., punkt_tab errors). Replaced by spaCy for better and faster NLP.
+- Dropped NLTK  -  NLTK caused path-related errors and required downloading corpora, which were problematic in deployment (e.g., punkt_tab errors). Replaced by spaCy for better and faster NLP.
 
 
 
