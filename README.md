@@ -70,9 +70,7 @@ streamlit run metadata_gen_app.py  # This will automatically run the web app on 
 NOTE: Before running the app , install the required dependencies using:
 
 !pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
-
-!apt-get install -y poppler-utils  # for pdf2image
-
+!apt-get install -y poppler-utils
 !python -m spacy download en_core_web_sm
 
 
