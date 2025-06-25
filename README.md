@@ -1,23 +1,23 @@
-## Project Overview: Automated Metadata Extraction App
+## 📄 Project Overview: Automated Metadata Extraction App
 
-##### Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
-
-
-## Feature	Description :
-
-- Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
-- OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
-- Keyword Extraction - Uses YAKE to extract top keywords and keyphrases
-- Metadata Generation - Extracts title, summary, keywords, language, word count, and timestamp
-- Language Detection - Identifies the document's language using langdetect
-- Summary Extraction - Uses spaCy's TextRank to produce concise summaries
-- Title Detection - Combines heuristics and NLP (noun/proper noun-rich short lines) to extract meaningful titles
-- Streamlit UI - Provides a clean web interface to upload files, view full text, and download metadata
-- Download Metadata - Gives option to user to download the metadata in "json" format
+### Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
 
 
+## 🚀 Key Features :
 
-## Tools & Technologies Used :
+- 📂 Multi-format Input - Supports PDFs, DOCX, and image files (JPG, PNG, etc.)
+- 🔍 OCR Integration - Uses Google Cloud Vision API to extract text from images or scanned PDFs
+- 🧠 Keyword Extraction - Uses YAKE to extract top keywords and keyphrases
+- 📃 Metadata Generation - Extracts title, summary, keywords, language, word count, and timestamp
+- 🌍 Language Detection - Identifies the document's language using langdetect
+- 📝 Summary Extraction - Uses spaCy's TextRank to produce concise summaries
+- 🧾 Title Detection - Combines heuristics and NLP (noun/proper noun-rich short lines) to extract meaningful titles
+- 👤 Streamlit UI - Provides a clean web interface to upload files, view full text, and download metadata
+- 💾 Exports Metadata - Gives option to user to download the metadata in "json" format
+
+
+
+## 🔧 Tools & Technologies Used :
 
 
 - Streamlit - Web interface for the app
@@ -32,7 +32,7 @@
 
 
 
-## Why This Design?
+## ❓ Why This Design?
 
 - OCR Fallback Logic-
 Many PDFs have embedded images with no selectable text. We first try native PDF text extraction. If it fails, we convert pages to images and apply Vision OCR.
@@ -42,7 +42,7 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 
 
-## Strategies which were changed during developement:
+## 🧠 Strategies which were changed during developement:
 
 - Removed Hugging Face / OpenAI APIs  -  These APIs required authentication, quota management, and billing, making them unsuitable for free/community deployment. Instead, we opted for fully open-source NLP (spaCy, YAKE) that works offline and integrates well with local and cloud setups.
 
@@ -52,7 +52,7 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 
 
-## Limitations:
+## 🚫 Limitations:
 
 - Relies on Google Cloud Vision API (credentials must be available).
 
@@ -65,21 +65,25 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 
 
-## How to Run the APP :
+## 🤔 How to Run the APP :
 
 
 
-- To Run the app (metadata_gen_app.py) locally, use:
+- To Run the app (metadata_gen_app.py) locally :
 
-streamlit run metadata_gen_app.py  # This will automatically run the web app on browser
+- Clone the repository on the local system
 
-NOTE: Before running the app , install the required dependencies using:
+NOTE: Before running the app , Install the required dependencies using:
 
 !pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
 
 !apt-get install -y poppler-utils
 
 !python -m spacy download en_core_web_sm
+
+- Then Run the app using :
+
+- streamlit run metadata_gen_app.py  # This will automatically run the web app on browser
 
 
 
@@ -99,9 +103,12 @@ NOTE: Before running the app , install the required dependencies using:
 - Extract content
 - Generate summary, keywords, etc.
 - View results in the browser.
-- Download the JSON metadata.
+- Download the JSON metadata (if needed).
 
-### Info about the pdf document present in the repository
+### Info about the files present in the repository
 
-- It is the pdf document on which the app is tested.
+- metadata_gen_app.py - The main App file(.py).
+- fp_dc_setup_guide.pdf - It is the pdf document on which the app is tested.
+- script.ipynb - Jupyter Notebook to Run the App file on Google Colab.
+- Readme.md - Readme file which tells about overview of the project
  
