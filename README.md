@@ -73,7 +73,7 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 
 - Clone the repository on the local system
 
-- NOTE: Before running the app , Install the required dependencies using:
+#### NOTE: Before running the app , Install the required dependencies using:
 
 - pip install streamlit pyngrok google-cloud-vision pdf2image pillow python-docx langdetect wordninja yake spacy pytextrank PyPDF2
 - apt-get install -y poppler-utils
@@ -91,7 +91,7 @@ Certificates or reports often have all-caps titles. A rule-based filter extracts
 - First download the app file metadata_gen_app.py in your system
   
 - Then on Colab , run the file "script.ipynb" , in this file after installing all the dependencies and setting up "ngrok" token it will prompt you to upload the code file , then you must upload the downloaded "metadata_gen_app.py" ,
-  then on runnning the next cell , it will prompt a public_url (eg.- "https://b961-35-247-107-213.ngrok-free.app") , just tap on the url and user will be redirected to the Web App
+- Then on runnning the next cell , it will prompt a public_url (eg.- "https://b961-35-247-107-213.ngrok-free.app") , just tap on the url and user will be redirected to the Web App
 
 
 ### After Reaching to Web App:
