@@ -1,6 +1,6 @@
 ## Project Overview: Automated Metadata Extraction App
 
-## Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
+##### Objective : The project aims to automatically extract structured metadata (such as title, summary, keywords, keyphrases, language, etc.) from unstructured documents including PDFs, DOCX files, and images. It leverages Google Cloud Vision API for OCR, YAKE for keyword extraction, and spaCy + pyTextRank for NLP to make document understanding faster and smarter.
 
 
 ## Feature	Description :
